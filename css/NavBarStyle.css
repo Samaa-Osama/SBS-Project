@@ -1,0 +1,117 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  min-height: 12vh;
+  min-width: 100%;
+  z-index: 10;
+  background: transparent;
+  margin-bottom: 20px;
+  font-family: serif;
+}
+
+
+.navbar .logo{
+  width: 150px;
+  height: auto;
+  padding: 0%;
+  margin: 0%;
+}
+
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around ;
+  align-items: center;
+  padding: 10px 0;
+}
+
+
+.navbar ul li {
+  display: inline;
+}
+
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  transition: color 0s ;
+}
+
+
+.navbar ul li a:hover,
+.navbar ul li a:focus {
+  color: yellow;
+  border:yellow double 5px;
+  border-radius: 50%  / 25% 10%;
+  border-image: linear-gradient(yellow, black)  ;
+}
+
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  background-color: transparent;
+  text-align: center;
+  padding: 10px 0;
+}
+
+
+.footerlink{
+  color: yellow;
+}
+
+
+/*Responsiveness*/
+
+
+/*responsiveness for navbar*/
+
+ @media (max-width: 830px) {
+  .navbar ul {
+      display: none;
+  }
+
+  .navbar ul.active {
+    display: inline-flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1000; /* Ensure the menu appears above other content */
+    background-color: rgb(114, 114, 114);
+    
+  }
+
+  .navbar ul.active li {
+    padding: 20px;
+  }
+
+  .menu {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .menu::after {
+    padding-right: 20px;
+    display: block;
+    content: '\2630';
+    color: yellow;
+    font-size: xx-large;
+  }
+}
+
+/*responsiveness for footer*/
+
+@media (max-width: 768px) {
+  footer {
+    padding: 10px;
+    text-align: center;
+  }
+}
+
