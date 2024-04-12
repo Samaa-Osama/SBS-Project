@@ -32,13 +32,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Get the hamburger menu element
-    var hamburgerMenu = document.querySelector('.menu');
+    // Get the menu element
+    var Menu = document.querySelector('.menu');
     // Get the ul element containing the links
     var navLinks = document.querySelector('.navbar ul');
 
-    // Toggle an 'active' class on the ul element when the hamburger menu is clicked
-    hamburgerMenu.addEventListener('click', function() {
+    // Toggle an 'active' class on the ul element when the menu is clicked
+    Menu.addEventListener('click', function() {
         navLinks.classList.toggle('active');
     });
 });
