@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     var navbarHTML = `
     <nav class="navbar">
-    <a href="HomePage.html"><img src="../img/SBSLOGO.png" alt="SBS Logo" class="logo"></a> 
+    // <a href="HomePage.html">
+    <img src="../img/SBSLOGO.png" alt="SBS Logo" class="logo">
+    // </a> 
         <div class="menu">
             <span></span>
             <span></span>
