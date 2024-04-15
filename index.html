@@ -3,83 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ</title>
-    <link rel="stylesheet" href="css/FAQstyle.css">
-    <link rel="stylesheet" href="css/NavBarStyle.css">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="css/HomePageStyle.css">
+    <link rel="stylesheet" href="./css/NavBarStyle.css">
+    
+    
 </head>
 <body>
-    <script src="js/NavBarJavaS.js"></script>
-    <header>
-        <div class="head">
-            <h2 class="title">FAQs <br></h2>
-            <p>As a student activity agency and community, it's our responsibility to address some common queries to better serve you.</p>
-        </div>
-    </header>
+    <script src="./js/NavBarJavaS.js"></script>
+
+    <div id="splash-screen">
+        <img src="./img/SBSLOGO.png" alt="SBS Logo" id="logo1" />
+    </div>
     
-    <main>
-        <div class="accordion">
-            <div class="contentbox">
-                <div class="label">Who can participate in SBS activities?</div>
-                <div class="content">
-                    <p>SBS activities are open to all students who are enrolled at the participating educational institution</p>
-                </div>
-                <div class="label">What are the benefits of participating in SBS activities?</div>
-                <div class="content">
-                    <p>Participating in SBS activities can enhance your social skills, provide new learning opportunities, and contribute to your personal growth.</p>
-                </div>
-                <div class="label">How can I stay updated on upcoming SBS activities?</div>
-                <div class="content">
-                    <p>Subscribe to the SBS newsletter, follow us on social media, and check the website regularly for updates.</p>
-                </div>
-                <div class="label">Who can I contact if I have questions or concerns about an SBS activity?</div>
-                <div class="content">
-                    <p>You can contact the SBS support team or the activity organizer directly for any questions or You can contact the SBS support team or the activity organizer directly for any questions or concerns.</p>
-                </div>
-                <div class="label">Are there any prerequisites for participating in certain activities?</div>
-                <div class="content">
-                    <p>Some activities may have specific requirements or prerequisites, such as skill levels or previous experience. These will be clearly stated in the activity description.</p>
-                </div>
-                <div class="label">Will I receive recognition for participating in SBS activities?</div>
-                <div class="content">
-                    <p>Yes, you can earn certificates and recognition for your participation in SBS activities. These can be valuable additions to your resume or college applications.</p>
-                </div>
-                <div class="label">How do I register for an SBS activity?</div>
-                <div class="content">
-                    <p>You can register for an activity by clicking on the Get involved button on the activity's page and following the prompts to complete your registration.</p>
-                </div>
-                <div class="label">Are there any opportunities to showcase my creative projects through SBS?</div>
-                <div class="content">
-                    <p>Yes, we have events and platforms dedicated to showcasing student work. Keep an eye out for these opportunities or propose your own event.</p>
-                </div>
-                <div class="label">What if I need to cancel my participation in an activity?</div>
-                <div class="content">
-                    <p>Cancellations should be made as soon as possible by contacting the activity organizer directly.</p>
-                </div>
-            </div>
-        </div>
+
+    <div class="container">
+        <img src="./img/Homeimg.png" alt="image not found">
+        <p class="introp">"Success is not a leap; it's a step-by-step process"</p>
+        <button class="btn">Get Involved!</button>
+      </div>
+
+
+    <main> 
+        <p>Welcome to SBS (Step By Step) - where success begins with a single step. Join us on a journey of growth, exploration, and achievement. Step to success today!</p>
     </main>
-    
+
+
+    <section id="about-us">
+        <h2>About Us</h2>
+        <p>SBS is a dynamic organization dedicated to empowering individuals and communities through education,
+            training, and mentorship. Our mission is to provide a supportive environment where
+            everyone can learn, grow, and achieve their full potential.
+            We believe that success is not an overnight event but
+            a gradual process that unfolds with each step we take.</p>
+        <p>Learn more about our mission, vision, and the values that drive us forward.</p>
+        <a href="#about">More About Us</a>
+    </section>
+
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>Explore the range of services we offer to help you on your journey to success:</p>
+        
+        <ul>
+            <li>Education and Training Programs</li>
+            <li>Mentorship and Coaching</li>
+            <li>Workshops and Seminars</li>
+            <li>Community Outreach Initiatives</li>
+            <li>Career Development Support</li>
+        </ul>
+    </section>
+
+
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <p>Read what our participants have to say about their experiences with SBS:</p>
+        <div class="testimonial">
+            <p>"SBS has been instrumental in helping me achieve my goals. The support and guidance I received from their team have been invaluable."</p>
+            <p>- John Doe</p>
+        </div>
+        <div class="testimonial">
+            <p>"I attended SBS workshops and learned skills that have transformed my career. I highly recommend their programs to anyone seeking personal and professional growth."</p>
+            <p>- Jane Smith</p>
+        </div>
+    </section>
+
+ 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var labels = document.querySelectorAll('.label');
-        
-            function toggleAccordion() {
-                var content = this.nextElementSibling;
-                this.classList.toggle('active');
-        
-                if (content.style.display === 'block') {
-                    content.style.display = 'none';
-                } else {
-                    content.style.display = 'block';
-                }
-            }
-        
-            labels.forEach(function(label) {
-                label.addEventListener('click', toggleAccordion);
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const splash = document.getElementById('splash-screen');
+            // Wait for the animation
+            splash.addEventListener('animationend', () => {
+                splash.style.display = 'none';
             });
         });
     </script>
 
-    
+
+
 </body>
 </html>
