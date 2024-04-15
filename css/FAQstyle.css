@@ -1,10 +1,10 @@
 body {
     font-family: serif;
     line-height: 1.6;
-    background-image: url(../img/bg8.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: url(../img/MainBackground.png) ;
+    background-repeat: round;
+    background-size: contain;
+    background-attachment: fixed;
     
 }
 
@@ -14,16 +14,16 @@ body {
 }
 
 .head .title{
-    margin-top: 0%;
+    margin-top: 60px;
     text-align: center;
     font-size: xx-large;
-    border: yellow  ;
     padding: 0%;
     
 }
 
 .head p{
-    font-size: large;
+    font-size: larger;
+    
 }
 
 
@@ -51,10 +51,6 @@ body {
     border: ridge yellow;
 }
 
-.label:hover {
-    background-color: black;
-}
-
 .label::after {
     content: '\27B7'; 
     color: yellow;
@@ -62,7 +58,6 @@ body {
     top: 15px;
     right: 20px;
     font-size: 20px;
-    box-shadow: yellow;
 }
 
 .label.active::after {
@@ -78,14 +73,68 @@ body {
     font-weight: bold;
 }
 
-.content p {
-    padding: 15px 0;
-    margin: 0;
+.question-box {
+    max-width: 250px;
+    margin: 20px ;
+    padding: 10px;
+    background: black; 
+    border: yellow ridge 3px; ; 
+    color: white; 
+}
+
+.question-box h3 {
+    color: white; 
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.question-box p {
+    color: white; 
+}
+
+#question-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#question-input {
+    min-height: 50px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+#question-form button {
+    padding: 10px 20px;
+    background-color: yellow; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black; 
+    font-weight: bold;
+}
+
+#question-form button:hover {
+    background-color: rgb(115, 115, 0); 
 }
 
 
-@media (max-width: 600px) {
+
+
+@media (max-width: 770px) {
+    .faq-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
     .accordion {
-        width: 95%;
+        width: 90%;
+        max-width: none;
+    }
+    .question-box{
+        width: 70%;
     }
 }
+
+
