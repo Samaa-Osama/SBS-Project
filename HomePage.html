@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="css/HomePageStyle.css">
+    <link rel="stylesheet" href="./css/NavBarStyle.css">
+    
+    
+</head>
+<body>
+    <script src="./js/NavBarJavaS.js"></script>
+
+    <div id="splash-screen">
+        <img src="./img/SBSLOGO.png" alt="SBS Logo" id="logo1" />
+    </div>
+    
+
+    <div class="container">
+        <img src="./img/Homeimg.png" alt="image not found">
+        <p class="introp">"Success is not a leap; it's a step-by-step process"</p>
+        <button class="btn">Get Involved!</button>
+      </div>
+
+
+    <main> 
+        <p>Welcome to SBS (Step By Step) - where success begins with a single step. Join us on a journey of growth, exploration, and achievement. Step to success today!</p>
+    </main>
+
+
+    <section id="about-us">
+        <h2>About Us</h2>
+        <p>SBS is a dynamic organization dedicated to empowering individuals and communities through education,
+            training, and mentorship. Our mission is to provide a supportive environment where
+            everyone can learn, grow, and achieve their full potential.
+            We believe that success is not an overnight event but
+            a gradual process that unfolds with each step we take.</p>
+        <p>Learn more about our mission, vision, and the values that drive us forward.</p>
+        <a href="#about">More About Us</a>
+    </section>
+
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>Explore the range of services we offer to help you on your journey to success:</p>
+        
+        <ul>
+            <li>Education and Training Programs</li>
+            <li>Mentorship and Coaching</li>
+            <li>Workshops and Seminars</li>
+            <li>Community Outreach Initiatives</li>
+            <li>Career Development Support</li>
+        </ul>
+    </section>
+
+
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <p>Read what our participants have to say about their experiences with SBS:</p>
+        <div class="testimonial">
+            <p>"SBS has been instrumental in helping me achieve my goals. The support and guidance I received from their team have been invaluable."</p>
+            <p>- John Doe</p>
+        </div>
+        <div class="testimonial">
+            <p>"I attended SBS workshops and learned skills that have transformed my career. I highly recommend their programs to anyone seeking personal and professional growth."</p>
+            <p>- Jane Smith</p>
+        </div>
+    </section>
+
+ 
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const splash = document.getElementById('splash-screen');
+            // Wait for the animation
+            splash.addEventListener('animationend', () => {
+                splash.style.display = 'none';
+            });
+        });
+    </script>
+
+
+
+</body>
+</html>
