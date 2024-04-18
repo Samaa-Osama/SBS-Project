@@ -12,3 +12,18 @@ background-color: black;
     height: auto;
     border-radius: 8px;
   }
+@media only screen and (max-width: 768px) {
+  .gallery {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 5px;
+      padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .gallery {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-gap: 3px;
+      padding: 3px;
+  }
+}
