@@ -1,0 +1,54 @@
+
+body {
+    background-color: black; 
+    color: yellow; 
+    font-family: 'Arial', sans-serif;
+    
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  .container h1{
+    border: rgb(227, 227, 227) double;
+    padding: 20px;
+  }
+  
+  .container div {
+    width: 30%;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(119, 119, 109, 0.2);
+    
+    background: black; 
+  }
+  
+ 
+  
+  .container img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid yellow; 
+  }
+  
+  .container p {
+    padding: 15px;
+    text-align: center;
+    margin: 0;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .container div {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container div {
+      width: 90%;
+    }
+  }
+  
