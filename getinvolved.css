@@ -2,13 +2,21 @@ html, body {
     height: 100%;
     margin: 10;
     background-color: black;
+    background-image: url(../img/MainBackground.png) ;
+    background-repeat: round;
+    background-size: contain;
+    background-attachment: fixed
     
   }
   .head{
     color: yellow;
-    font-size: larger;
+    font-size: xx-large;
     padding: auto;
-    margin: auto;
+    margin: 20px;
+    text-align: center;
+    border: whitesmoke double;
+    border-radius: 4px;
+
   }
  
    .form {
