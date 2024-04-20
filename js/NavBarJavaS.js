@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#about">About Us</a></li>
-            <li><a href="#projects">Projects/Events</a></li>
+            <li><a href="projects(2).html">Projects/Events</a></li>
             <li><a href="#get-involved">Get Involved</a></li>
             <li><a href="#sponsors">Sponsors</a></li>
             <li><a href="gallery.html">Gallery</a></li>
