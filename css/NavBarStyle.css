@@ -61,6 +61,32 @@ footer {
   text-align: center;
   padding: 10px 0;
 }
+footer .links p,
+footer p {
+  margin: 10px 0;
+}
+footer .links {
+  display: flex;
+  justify-content: space-around; 
+  flex-wrap: wrap; 
+}
+
+footer a {
+  color: white; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover,
+footer a:focus {
+  color: antiquewhite; 
+  text-decoration: underline;
+}
+
+.footerlink:hover,
+.footerlink:focus {
+  color: #fff;
+}
 
 
 .footerlink{
